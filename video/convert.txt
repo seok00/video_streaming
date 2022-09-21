@@ -1,0 +1,1 @@
+ffmpeg -i test2.mov -preset slow -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 4500k -minrate 4500k -maxrate 9000k -bufsize 9000k -vf scale=-2:1080 test2_out.mp4
