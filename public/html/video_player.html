@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Video Player</title>
+    <link href="css/video_player.css" rel="stylesheet">
+</head>
+<body>
+    <div id="frame">
+        <div id="top">
+            <ul class ="group">
+                <li class="list">
+                    <span>TOD 영상</span>
+                    <span id="connection">연결 중 ...</span>
+                </li>
+                <li class="list">
+                    <span>AI Version</span>
+                    <span id="aiVersion">20220101A</span>
+                </li>
+                <li class="list"> 
+                    <span id="warning">경고기능 작동 중</span>
+                </li>
+                <li class="list">
+                    <span>경고발생 대기시간</span>
+                    <span id="waitTime">3초</span>
+                </li>
+                <li class="list">
+                    <span>경고기능 켜짐시간</span>
+                    <span id="runTime">3초</span>
+                </li>
+            </ul>
+        </div>
+        <div id="middle">
+            <div class="left">
+                <video width="100%" height="100%" controls>
+                    <source src="/video/drone.mp4" type="video/mp4"> -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="right" id="log_ex">
+                <ul>상황 목록</ul>
+                <div id="log"></div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="left">
+                <ul class="group">
+                    <li class="list">
+                        <span id="fps">15fps</span>
+                        <span id="resolution">1024 X 768</span>
+                    </li>
+                    <li class="list">
+                        <span id="human">Human: 2</span>
+                        <span id="vehicle">Vehicle: 1</span>
+                        <span id="animal">Animal: 1</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="right" id="situation">
+                <ul class="group">
+                    <li class="list" >
+                        정상 상황
+                    </li>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>
